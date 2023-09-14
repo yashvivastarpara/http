@@ -4,7 +4,8 @@ const server = http.createServer((req, res) => {
   if (req.url == "/") res.end("welcome to server");
   else if (req.url == "/index") {
     res.end("wlcm to index");
-  } else if (req.url == "/login") {
+  } 
+  else if (req.url == "/login") {
     res.end(`
     <html>
     <body>
@@ -23,7 +24,8 @@ const server = http.createServer((req, res) => {
     </form>
     </body>
     </html>`);
-  } else if (req.url == "/signup") {
+  } 
+  else if (req.url == "/signup") {
     res.end(`<html>
     <body>
     <form action="">
@@ -41,13 +43,17 @@ const server = http.createServer((req, res) => {
     </form>
     </body>
     </html>`);
-  } else if (req.url == "/about") {
+  } 
+  else if (req.url == "/about") {
     res.end("wlcm to about");
-  } else if (req.url == "/service") {
+  } 
+  else if (req.url == "/service") {
     res.end("wlcm to service");
-  } else if (req.url == "/product") {
+  } 
+  else if (req.url == "/product") {
     res.end("wlcm to product");
-  } else if (req.url == "/blog") {
+  } 
+  else if (req.url == "/blog") {
     res.end("wlcm to blog");
   }
 });
